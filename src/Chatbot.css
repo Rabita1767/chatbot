@@ -1,0 +1,92 @@
+/* src/Chatbot.css */
+
+/* Chatbot Icon Styles */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  /* Overlay Background */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    cursor: pointer;
+  }
+  
+  /* Chatbox Styling */
+  .chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Chat Window */
+  .chatWindow {
+    padding: 10px;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  /* Styling for messages */
+  .message {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .message.bot {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+  }
+  
+  .message.user {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  /* Input and Send Button */
+  .input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }
+  
+  .sendButton {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
